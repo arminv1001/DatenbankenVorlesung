@@ -9,6 +9,6 @@ CREATE TABLE Persons
 Insert into Persons Values (1,"Armin","V", 19);
 Insert into Persons Values (2,"Arian","V", 17);
 Insert into Persons Values (3,"Finn","F", 23);
-Insert into Persons Values (4,"Khiemi","N", 19);
-Insert into Persons Values (5,"Yusuf","S", 20);
+Insert into Persons Values (4,"Khiemi","N", 20);
+Insert into Persons Values (5,"Emmelie","B", 19);
 
