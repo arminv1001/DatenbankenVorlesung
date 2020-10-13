@@ -21,7 +21,6 @@ CREATE TABLE Mitarbeiterliste(
 	MitarbeiterID int NOT NULL,
     ProjektID int NOT NULL,
     StatusID int NOT NULL,
-    Projektleiter boolean NOT NULL,
     FOREIGN KEY (MitarbeiterID) REFERENCES Mitarbeiter(MitarbeiterID),
     FOREIGN KEY (ProjektID) REFERENCES Projekt (ProjektID),
     FOREIGN KEY (StautsID) REFERENCES StatusMitarbeiter(StatusID)
@@ -31,6 +30,7 @@ CREATE TABLE Mitarbeiter(
     Vorname varchar(25) NOT NULL,
     Nachname varchar(25) NOT NULL,
     ResortID int NOT NULL,
+    Projektleiter boolean NOT NULL,
     PRIMARY KEY (MitarbeiterID),
     FOREIGN KEY (ProjektID) REFERENCES Projekt (ProjektID),
     FOREIGN KEY (ResortID) REFERENCES Resort (ResortID)
