@@ -1,0 +1,24 @@
+I.	Datenbank-Schema
+Man unterscheidet bei der Architektur einer Datenbank in verschiedenen Schemata.
+Das konzeptionelle Schema beschreibt die Entitäten, Eigenschaften, Relationen der realen Welt (objektorientiertes Verständnis).
+Das interne Schema ist die physikalische Repräsentation der Daten.
+Das logische Schema vermittelt die logischen Einschränkungen, die für die gespeicherten Einschränkungen gelten. Zum Beispiel Integritätseinschränkungen, Ansichten und Tabellen.
+
+II.	Unterschied DBS und DBMS
+Ein Datenbanksystem (DBS) umfasst zwei Komponenten. Die eigentliche Datenbank (Datenbasis) und ein Datenbankmanagementsystem (DBMS), dass es erlaubt auf die Datenbank zuzugreifen. 
+Dies ist die Software, die Operationen mit der Datenbank ermöglicht und Veränderungen an der Datenbank umsetzt. Zum Beispiel Speichern, löschen, überschreiben. Dies erfolgt über eine Datensprache, zum Beispiel MySQL, Microsoft SQL Server, MariaDB. 
+Mithilfe des DBMS kann auch die Sichtbarkeit von Daten und die Datensicherheit gewährleistet werden.
+
+III.	Arten der Integritätsbedingungen, die DBMS unterstützen
+Integritätsbedingungen sind Bedingungen, die an den Zustand einer Datenstruktur gestellt werden. Erfüllen Zustände einer Datenbank die Integritätsbedingung, werden sie als konsistent bezeichnet.
+
+Integritätsbedingungen sind abhängig vom Relationsmodell
+•	Primärschlüsseleigenschaft
+•	Referentielle Integrität für den Fremdschlüssel
+•	Definitionsberiech für Attribute
+
+Integritätsbedingungen sind abhängig von der Reichweite 
+•	Attributwert-­‐Bedingungen (z.B. Geburtsjahr > 2000)
+•	Satzbedingung (z.B. Geburtsdatum < Einstellungsdatum)
+•	Satztyp-Bedingung (z.B. Eindeutigkeit von Attributen)
+•	Satztypübergreifende Bedingungen (z.B. referentielle Integrität zwischen verschiedenen Tabellen)
